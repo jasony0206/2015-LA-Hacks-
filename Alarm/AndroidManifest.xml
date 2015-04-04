@@ -1,0 +1,19 @@
+<manifest android:versioncode="1" android:versionname="1.0"
+    package="com.example.jason.alarm6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minsdkversion="10" android:targetsdkversion="15"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_alarm_manager"
+            android:name="com.example.jason.alarm6.AlarmManagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.example.jason.alarm6.AlarmManagerBroadcastReceiver">
+        </receiver>
+    </application>
+</manifest>
